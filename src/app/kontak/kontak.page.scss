@@ -1,0 +1,37 @@
+/* CSS untuk Pusatkan Element dan Nuansa Cokelat Muda */
+ion-header {
+    --ion-background-color: #d7ccc8; /* Warna latar belakang coklat muda */
+  }
+  
+  ion-toolbar, ion-title {
+    color: #5d4037; /* Warna teks coklat tua */
+  }
+  
+  ion-card {
+    background-color: #efebe9; /* Warna latar belakang abu-abu muda */
+    margin: 10px; /* Memberikan margin di sekitar card */
+  }
+  
+  ion-item, ion-input {
+    --ion-background-color: #fff; /* Warna latar belakang putih */
+  }
+  
+  ion-button {
+    --ion-background-color: #4e342e; /* Warna tombol coklat tua */
+    color: #fff; /* Warna teks putih */
+    margin-top: 10px; /* Memberikan margin di atas tombol */
+  }
+  
+  /* CSS untuk Modal */
+  ion-modal ion-header {
+    --ion-background-color: #d7ccc8; /* Warna latar belakang coklat muda */
+  }
+  
+  ion-modal ion-title {
+    color: #5d4037; /* Warna teks coklat tua */
+  }
+  
+  ion-modal ion-item, ion-modal ion-input {
+    --ion-background-color: #fff; /* Warna latar belakang putih */
+  }
+  

@@ -13,12 +13,9 @@ export class LoginPage {
   constructor(private router: Router) {}
 
   login() {
-    // Implementasi logika login di sini
-    // Contoh sederhana: jika username dan password adalah 'admin', arahkan ke halaman lain
     if (this.username === 'admin' && this.password === 'admin') {
-      this.router.navigate(['/kontak']); // Ganti '/home' dengan rute halaman yang sesuai
+      this.router.navigate(['/kontak']); 
     } else {
-      // Tampilkan pesan kesalahan atau logika lainnya
     }
   }
 }

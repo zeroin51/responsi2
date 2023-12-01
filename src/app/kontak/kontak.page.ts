@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
 import { ModalController } from '@ionic/angular';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-kontak',
   templateUrl: './kontak.page.html',
@@ -8,7 +9,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class KontakPage implements OnInit {
 
-  constructor(public _apiService: ApiService, private modal:ModalController) { }
+  constructor(public _apiService: ApiService, private modal:ModalController, private router: Router) { }
   dataKontak: any = [];
   modal_tambah = false;
   id: any;
@@ -129,5 +130,8 @@ export class KontakPage implements OnInit {
                 console.log('gagal edit Kontak');
                 }
                 })
+                }
+                goToLoginPage() {
+                  this.router.navigate(['/login']);
                 }
 }

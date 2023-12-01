@@ -4,6 +4,12 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Data Kontak</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToLoginPage()">
+        <ion-icon name="log-out"></ion-icon>
+        Logout
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -17,7 +23,7 @@
       </ion-label>
       <ion-buttons slot="end">
         <ion-button color="danger" (click)="hapusKontak(item.id)">Hapus</ion-button>
-        <ion-button (click)="open_modal_edit(true, item.id)">Edit</ion-button>
+        <ion-button color="warning" (click)="open_modal_edit(true, item.id)">Edit</ion-button>
       </ion-buttons>
     </ion-item>
   </ion-card>
